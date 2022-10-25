@@ -15,7 +15,6 @@ section .container {
 @media screen and (max-width: 48em) {
   section .container {
     margin-top: 10rem;
-    border: solid green;
     font-size: 0.85rem;
     position: relative;
     left: 2%;
@@ -31,7 +30,6 @@ section .container {
 }
 @media screen and (max-width: 48em) {
   section .topContainer {
-    border: solid red;
     font-size: 0.85rem;
     width: 80%;
     min-height: 100%;
@@ -46,7 +44,6 @@ section .listBooks {
   list-style-type: none;
   gap: 2rem;
   justify-content: center;
-  border: solid blue;
 }
 section li a {
   text-decoration: none;
