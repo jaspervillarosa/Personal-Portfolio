@@ -58,6 +58,7 @@
             width: 75%;
             position: relative;
             left: 12%;
+            margin-top: 2.5rem;
 
             h1 {
                 font-size: 1.5rem;
@@ -77,8 +78,9 @@
             
             margin-top: 4%;
             max-width: 80%;
+            width: 75%;
             position: relative;
-            left: 10%;
+            left: 12%;
 
             .form, input, textarea, button {
 
@@ -94,14 +96,52 @@
 
                 margin-top: 0.6rem;
             }
+        }
+    }
 
+        @media screen and (max-width:48em) {
+            
+            
             .video {
 
-                max-width: 75%;
+                width: 100%;
                 min-height: 30%;
                
             }
+
+            iframe {
+
+                width: 70%;
+                position: relative;
+                left: 4rem;
+            }
         }
+
+        .column {
+            
+            @media screen and (max-width: 48em){
+                
+                margin-top: 4%;
+                max-width: 80%;
+                width: 75%;
+                position: relative;
+                left: 12%;
+    
+                .form, input, textarea, button {
+    
+                    font-size: 0.85rem;
+                   
+                }
+                label {
+    
+                    margin-top: 0;
+                }
+    
+                button {
+    
+                    margin-top: 0.6rem;
+                }
+            }
 
     }
     

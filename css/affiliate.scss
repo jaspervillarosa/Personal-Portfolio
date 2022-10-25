@@ -123,6 +123,15 @@
             table {
                 width: 100%;
                 max-width: 100%;
+
+                @media screen and (max-width:48em) {
+                    
+                    tr th, tr td {
+                        width: 50%;
+                        display: inline-block;
+                                  
+                    }
+                }
             }
 
             .review {

@@ -34,6 +34,7 @@
     width: 75%;
     position: relative;
     left: 12%;
+    margin-top: 2.5rem;
   }
   .firstsection .topContainer h1 {
     font-size: 1.5rem;
@@ -46,8 +47,9 @@
   .firstsection .column {
     margin-top: 4%;
     max-width: 80%;
+    width: 75%;
     position: relative;
-    left: 10%;
+    left: 12%;
   }
   .firstsection .column .form, .firstsection .column input, .firstsection .column textarea, .firstsection .column button {
     font-size: 0.85rem;
@@ -58,9 +60,34 @@
   .firstsection .column button {
     margin-top: 0.6rem;
   }
-  .firstsection .column .video {
-    max-width: 75%;
+}
+@media screen and (max-width: 48em) {
+  .firstsection .video {
+    width: 100%;
     min-height: 30%;
+  }
+  .firstsection iframe {
+    width: 70%;
+    position: relative;
+    left: 4rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .firstsection .column {
+    margin-top: 4%;
+    max-width: 80%;
+    width: 75%;
+    position: relative;
+    left: 12%;
+  }
+  .firstsection .column .form, .firstsection .column input, .firstsection .column textarea, .firstsection .column button {
+    font-size: 0.85rem;
+  }
+  .firstsection .column label {
+    margin-top: 0;
+  }
+  .firstsection .column button {
+    margin-top: 0.6rem;
   }
 }
 .firstsection input, .firstsection textarea {

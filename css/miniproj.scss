@@ -121,6 +121,11 @@ nav li {
     font-size: 1.2rem;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
+
+    @media screen  and (max-width:48em){
+        
+        font-size: 0.85rem;
+    }
  
 
     &:hover {
@@ -168,6 +173,11 @@ nav li {
     margin-top: 0.70em;
     font-size: 1.5em;
     color: #555555;
+
+    &:hover {
+
+        color: #DC5F00;
+    }
    
  }
  
@@ -240,6 +250,11 @@ nav li {
     padding: 1rem;
     padding-top: 5rem;
     padding-bottom: 6rem;
+
+    @media screen and (max-width:48em){
+
+        font-size: 0.85rem;
+    }
     
     
 }
@@ -296,6 +311,7 @@ nav li {
         .wrap-container-card {
             display: flex;
             justify-content: center;
+            
 
             @media screen and (max-width: 48em){
 
@@ -309,10 +325,14 @@ nav li {
         .row-card{
     
             display: flex;
-            
+            border-radius: 1rem;
             // border: 1px solid #333333;
             background-color: lightgray;
          
+        }
+
+        img {
+            border-radius: 1rem;
         }
         
         
@@ -321,18 +341,37 @@ nav li {
             width: 50%;
             height: 50%;
         }
-     
+
+        @media screen and (max-width:48rem) {
+            
+            .row-card {
+
+                display: flex;
+                width: 100%;
+                border-radius: 1rem;
+            }
+
+            img {
+
+                position: relative;
+                right: 4%;
+                border-radius: 1rem;
+            }
+
+        }
+       
 
         .column-card-two{
             left: 0;
             top: 0;
             margin-left: 20%;
             margin-top: 23%;
+          
 
             @media screen and (max-width: 48rem){
 
                 margin-top: 16%;
-                margin-left: 16%;
+                margin-left: 18%;
             }
         }
     
@@ -382,7 +421,7 @@ nav li {
 
     @media screen and  (max-width: 48rem){
 
-     left: 11%;
+     left: 12%;
 
     }
 
@@ -413,7 +452,7 @@ nav li {
   
 }
 
-.firstarticle .card-title {
+.firstarticle .card-title , .secarticle .card-title {
 
     @include textsecarticle();
 }

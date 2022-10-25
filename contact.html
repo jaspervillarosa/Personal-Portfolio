@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <link rel="stylesheet" href="css/contact.css">
-
+    <link rel="stylesheet" href="css/miniproj.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/miniproj.css">
+   
 </head>
 <body class="badi">
 
     <header>
-        <h1 class="logo"><a href="https://jaspervillarosa.github.io/Personal-Portfolio/jasper.html"> JASPER.</a></h1>
+        <h1 class="logo"><a href="#"> JASPER.</a></h1>
 
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
         <nav>
             <ul>
-                <li><a href="https://jaspervillarosa.github.io/Personal-Portfolio/contact.html">CONTACT</a></li>
-                <li><a href="https://jaspervillarosa.github.io/Personal-Portfolio/affiliate.html">Affiliate Links</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">Affiliate Links</a></li>
             </ul>
         </nav>
 
@@ -59,7 +59,7 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Tell me about your project *</label>
-                    <textarea placeholder="Your message..." class="form-control" name="project" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea placeholder="Your message..." class="form-control" name="projects" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
 
                 <div class="mb-3">
@@ -68,9 +68,15 @@
                   
                 </div >
                 
-                    <button type="submit" name="save" class="btn btn-primary">Submit</button>
+                    <button onclick="myFunction()" type="submit" name="save" class="btn btn-primary">Submit</button>
                
               </form>
+
+              <script>
+                function myFunction() {
+                  alert("Submitted succesfully!");
+                }
+                </script>
 
             <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/BcXwZEbOvpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

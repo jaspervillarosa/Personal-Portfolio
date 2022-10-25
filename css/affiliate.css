@@ -91,6 +91,12 @@ section .articleContainer table {
   width: 100%;
   max-width: 100%;
 }
+@media screen and (max-width: 48em) {
+  section .articleContainer table tr th, section .articleContainer table tr td {
+    width: 50%;
+    display: inline-block;
+  }
+}
 section .articleContainer .review {
   margin-top: 2rem;
 }

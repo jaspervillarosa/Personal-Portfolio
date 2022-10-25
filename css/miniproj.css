@@ -63,6 +63,11 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
+@media screen and (max-width: 48em) {
+  nav a {
+    font-size: 0.85rem;
+  }
+}
 nav a:hover {
   color: #DC5F00;
 }
@@ -86,6 +91,9 @@ nav a:hover {
   margin-top: 0.7em;
   font-size: 1.5em;
   color: #555555;
+}
+.nav-toggle-label:hover {
+  color: #DC5F00;
 }
 
 @media screen and (min-width: 800px) {
@@ -129,6 +137,11 @@ nav a:hover {
   padding-top: 5rem;
   padding-bottom: 6rem;
 }
+@media screen and (max-width: 48em) {
+  .foot {
+    font-size: 0.85rem;
+  }
+}
 
 .secarticle .column-card-one {
   position: relative;
@@ -136,7 +149,7 @@ nav a:hover {
 }
 @media screen and (max-width: 48rem) {
   .secarticle .column-card-one {
-    left: 11%;
+    left: 12%;
   }
 }
 
@@ -150,7 +163,7 @@ nav a:hover {
 }
 
 @media screen and (max-width: 48rem) {
-  .firstarticle .card-title {
+  .firstarticle .card-title, .secarticle .card-title {
     font-size: 0.95rem;
   }
 }
@@ -195,11 +208,27 @@ nav a:hover {
 }
 .primary-content .firstarticle .row-card, .primary-content .secarticle .row-card {
   display: flex;
+  border-radius: 1rem;
   background-color: lightgray;
+}
+.primary-content .firstarticle img, .primary-content .secarticle img {
+  border-radius: 1rem;
 }
 .primary-content .firstarticle .column-card-one, .primary-content .secarticle .column-card-one {
   width: 50%;
   height: 50%;
+}
+@media screen and (max-width: 48rem) {
+  .primary-content .firstarticle .row-card, .primary-content .secarticle .row-card {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .primary-content .firstarticle img, .primary-content .secarticle img {
+    position: relative;
+    right: 4%;
+    border-radius: 1rem;
+  }
 }
 .primary-content .firstarticle .column-card-two, .primary-content .secarticle .column-card-two {
   left: 0;
@@ -210,7 +239,7 @@ nav a:hover {
 @media screen and (max-width: 48rem) {
   .primary-content .firstarticle .column-card-two, .primary-content .secarticle .column-card-two {
     margin-top: 16%;
-    margin-left: 16%;
+    margin-left: 18%;
   }
 }
 .primary-content .firstarticle .card-body, .primary-content .secarticle .card-body {
