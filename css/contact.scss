@@ -52,6 +52,60 @@
        
     }
 
+    .topContainer {
+
+        @media screen and (max-width: 48em){
+            width: 75%;
+            position: relative;
+            left: 12%;
+
+            h1 {
+                font-size: 1.5rem;
+                
+            }
+            p {
+                font-size: 0.85rem;
+            }
+        }
+        
+    }
+
+        
+    .column {
+            
+        @media screen and (max-width: 48em){
+            
+            margin-top: 4%;
+            max-width: 80%;
+            position: relative;
+            left: 10%;
+
+            .form, input, textarea, button {
+
+                font-size: 0.85rem;
+               
+            }
+            label {
+
+                margin-top: 0;
+            }
+
+            button {
+
+                margin-top: 0.6rem;
+            }
+
+            .video {
+
+                max-width: 75%;
+                min-height: 30%;
+               
+            }
+        }
+
+    }
+    
+
     input, textarea {
         width: 200%;
        
@@ -75,11 +129,13 @@
         border: black;
         display: block;
         margin-top: 20%;
+        margin-bottom: 10%;
         width: 200%;
 
         &:hover {
             background-color: #555555;
         }
+
     }
 
     .video {
@@ -104,13 +160,13 @@
     .fa {
         text-decoration: none;
         padding: 1rem;
-        border-radius: 20%;
         color: #333333;
         font-size: 1.5rem;
     }
 
     .fa-facebook {
         background: lightgray;
+        border-radius: 20%;
 
         &:hover {
             color: lightgray;
@@ -121,7 +177,7 @@
 
     .fa-twitter {
         background: lightgray;
-
+        border-radius: 50%;
         &:hover {
             color: lightgray;
             background-color: black;
@@ -132,13 +188,26 @@
     .fa-instagram {
 
         background: lightgray;
-
+        border-radius: 50%;
         &:hover {
             color: lightgray;
             background-color: black;
             opacity: 0.5;
         }
     }
+
+    .fa {
+
+        @media  screen and (max-width: 48em) {
+            
+            font-size: 1rem;
+            padding: 0.85rem;
+            position: relative;
+            left: 1%;
+        }
+    
+    }
+    
 
     @media screen and (max-width: 48rem){
 

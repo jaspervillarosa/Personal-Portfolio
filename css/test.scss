@@ -1,0 +1,9 @@
+@mixin root {
+  
+    --background: #EEEEEE;
+
+}
+
+:root{
+@include root;
+}

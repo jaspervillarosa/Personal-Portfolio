@@ -29,6 +29,40 @@
 .firstsection .form {
   font-size: 1rem;
 }
+@media screen and (max-width: 48em) {
+  .firstsection .topContainer {
+    width: 75%;
+    position: relative;
+    left: 12%;
+  }
+  .firstsection .topContainer h1 {
+    font-size: 1.5rem;
+  }
+  .firstsection .topContainer p {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .firstsection .column {
+    margin-top: 4%;
+    max-width: 80%;
+    position: relative;
+    left: 10%;
+  }
+  .firstsection .column .form, .firstsection .column input, .firstsection .column textarea, .firstsection .column button {
+    font-size: 0.85rem;
+  }
+  .firstsection .column label {
+    margin-top: 0;
+  }
+  .firstsection .column button {
+    margin-top: 0.6rem;
+  }
+  .firstsection .column .video {
+    max-width: 75%;
+    min-height: 30%;
+  }
+}
 .firstsection input, .firstsection textarea {
   width: 200%;
 }
@@ -47,6 +81,7 @@
   border: black;
   display: block;
   margin-top: 20%;
+  margin-bottom: 10%;
   width: 200%;
 }
 .firstsection button:hover {
@@ -68,12 +103,12 @@
 .firstsection .fa {
   text-decoration: none;
   padding: 1rem;
-  border-radius: 20%;
   color: #333333;
   font-size: 1.5rem;
 }
 .firstsection .fa-facebook {
   background: lightgray;
+  border-radius: 20%;
 }
 .firstsection .fa-facebook:hover {
   color: lightgray;
@@ -82,6 +117,7 @@
 }
 .firstsection .fa-twitter {
   background: lightgray;
+  border-radius: 50%;
 }
 .firstsection .fa-twitter:hover {
   color: lightgray;
@@ -90,11 +126,20 @@
 }
 .firstsection .fa-instagram {
   background: lightgray;
+  border-radius: 50%;
 }
 .firstsection .fa-instagram:hover {
   color: lightgray;
   background-color: black;
   opacity: 0.5;
+}
+@media screen and (max-width: 48em) {
+  .firstsection .fa {
+    font-size: 1rem;
+    padding: 0.85rem;
+    position: relative;
+    left: 1%;
+  }
 }
 @media screen and (max-width: 48rem) {
   .firstsection input, .firstsection textarea, .firstsection button {

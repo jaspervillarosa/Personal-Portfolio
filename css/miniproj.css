@@ -136,7 +136,7 @@ nav a:hover {
 }
 @media screen and (max-width: 48rem) {
   .secarticle .column-card-one {
-    left: 15.5%;
+    left: 11%;
   }
 }
 
@@ -186,6 +186,13 @@ nav a:hover {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 48em) {
+  .primary-content .firstarticle .wrap-container-card, .primary-content .secarticle .wrap-container-card {
+    max-width: 80%;
+    position: relative;
+    left: 10%;
+  }
+}
 .primary-content .firstarticle .row-card, .primary-content .secarticle .row-card {
   display: flex;
   background-color: lightgray;
@@ -199,6 +206,12 @@ nav a:hover {
   top: 0;
   margin-left: 20%;
   margin-top: 23%;
+}
+@media screen and (max-width: 48rem) {
+  .primary-content .firstarticle .column-card-two, .primary-content .secarticle .column-card-two {
+    margin-top: 16%;
+    margin-left: 16%;
+  }
 }
 .primary-content .firstarticle .card-body, .primary-content .secarticle .card-body {
   margin: auto;

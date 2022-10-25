@@ -16,14 +16,14 @@
 <body class="badi">
 
     <header>
-        <h1 class="logo"><a href="https://jaspervillarosa.github.io/Personal-Portfolio/jasper.html"> JASPER.</a></h1>
+        <h1 class="logo"><a href="#"> JASPER.</a></h1>
 
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
         <nav>
             <ul>
-                <li><a href="https://jaspervillarosa.github.io/Personal-Portfolio/contact.html">CONTACT</a></li>
-                <li><a href="https://jaspervillarosa.github.io/Personal-Portfolio/affiliate.html">Affiliate Links</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">Affiliate Links</a></li>
             </ul>
         </nav>
 
@@ -35,45 +35,45 @@
 
 
     <section class="firstsection">
-        <h1>CONTACT</h1>
-        <p> <span>available for hire</span> </p>
-        <p>
-            Hey, I'm 20 years old with a passion to make your vision a reality.
-            I'm available to shoot and/or edit videos/photos.
-        </p>
+        <div class="topContainer">
+            <h1>CONTACT</h1>
+            <p> <span>available for hire</span> </p>
+            <p>
+                Hey, I'm 20 years old with a passion to make your vision a reality.
+                I'm available to shoot and/or edit videos/photos.
+            </p>
+        </div>
 
         <div class="column">
 
             
-            <form class="form">
+            <form class="form" action="contact.php" method="post">
                 <div class="mb-3">
                     <label  for="exampleinputName1" class="form-label">Name *</label>
-                    <input placeholder="Your name..." type="text" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" required>
+                    <input placeholder="Your name..." type="text" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" name="names" required>
                   </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address *</label>
-                  <input placeholder="Your name..." type="email" class="form-control" id="exampleInputEmail1" required>
+                  <input placeholder="Your name..." type="email" class="form-control" name="email" id="exampleInputEmail1" required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea placeholder="Your message..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label">Tell me about your project *</label>
+                    <textarea placeholder="Your message..." class="form-control" name="project" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
 
                 <div class="mb-3">
                   <label for="exampleInputBudget1" class="form-label">Whats your budget? *</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" required>
+                  <input type="text" class="form-control" id="exampleInputPassword1" name="budget" aria-describedby="passwordHelp" required>
                   
                 </div >
                 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="save" class="btn btn-primary">Submit</button>
                
               </form>
 
             <div class="video">
-               <iframe width="420" height="315"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BcXwZEbOvpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 

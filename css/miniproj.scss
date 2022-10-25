@@ -296,8 +296,14 @@ nav li {
         .wrap-container-card {
             display: flex;
             justify-content: center;
-            
-            
+
+            @media screen and (max-width: 48em){
+
+                max-width: 80%;
+                position: relative;
+                left: 10%;
+            }
+              
         }
     
         .row-card{
@@ -322,6 +328,12 @@ nav li {
             top: 0;
             margin-left: 20%;
             margin-top: 23%;
+
+            @media screen and (max-width: 48rem){
+
+                margin-top: 16%;
+                margin-left: 16%;
+            }
         }
     
     
@@ -370,10 +382,10 @@ nav li {
 
     @media screen and  (max-width: 48rem){
 
-     left: 15.5%;
-
+     left: 11%;
 
     }
+
 }
 
 @mixin textsecarticle {
